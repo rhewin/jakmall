@@ -4,7 +4,7 @@ namespace Jakmall\Recruitment\Calculator\Commands;
 
 use Jakmall\Recruitment\Calculator\Commands\BaseCommand;
 
-class AddCommand extends BaseCommand
+class PowerCommand extends BaseCommand
 {
     public function __construct()
     {
@@ -13,17 +13,17 @@ class AddCommand extends BaseCommand
 
     protected function getCommandVerb(): string
     {
-        return 'add';
+        return 'power';
     }
 
     protected function getCommandPassiveVerb(): string
     {
-        return 'added';
+        return 'powered';
     }
 
     protected function getOperator(): string
     {
-        return '+';
+        return '^';
     }
 
     /**
@@ -34,6 +34,6 @@ class AddCommand extends BaseCommand
      */
     protected function calculate($number1, $number2)
     {
-        return $number1 + $number2;
+        return $number1 ** $number2;
     }
 }
