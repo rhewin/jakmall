@@ -36,4 +36,9 @@ class MultiplyCommand extends BaseCommand
     {
         return $number1 * $number2;
     }
+
+    public function testCalculation(array $numbers)
+    {
+        return parent::calculateAll($numbers);
+    }
 }

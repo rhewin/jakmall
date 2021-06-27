@@ -1,9 +1,11 @@
 <?php
 
+use Jakmall\Recruitment\Calculator\Commands\{AddCommand, SubtractCommand, MultiplyCommand, DivideCommand, PowerCommand};
+
 return [
-    \Jakmall\Recruitment\Calculator\Commands\AddCommand::class,
-    \Jakmall\Recruitment\Calculator\Commands\SubtractCommand::class,
-    \Jakmall\Recruitment\Calculator\Commands\MultiplyCommand::class,
-    \Jakmall\Recruitment\Calculator\Commands\DivideCommand::class,
-    \Jakmall\Recruitment\Calculator\Commands\PowerCommand::class,
+    AddCommand::class,
+    SubtractCommand::class,
+    MultiplyCommand::class,
+    DivideCommand::class,
+    PowerCommand::class,
 ];
